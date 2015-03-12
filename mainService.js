@@ -13,13 +13,13 @@ app.service("mainService", function(){
 
   	this.getData = function(){
   		return quotes;
-  	}
+  	};
 
   	this.addData = function(object){
   		if (object.text && object.author){
   			quotes.push({text: object.text, author: object.author});
   		}
-  	}
+  	};
 
   	this.removeData = function(object){
   		console.log("got here");
@@ -30,6 +30,6 @@ app.service("mainService", function(){
   				i--;
   			}
   		}
-  	}
+  	};
 
 })
